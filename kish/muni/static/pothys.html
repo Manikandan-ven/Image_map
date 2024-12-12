@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>POTHYS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            flex: 1;
+        }
+
+        nav a:hover {
+            background-color: #2980b9;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 30%;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-card h3 {
+            padding: 10px;
+            background-color: #ecf0f1;
+            margin: 0;
+            text-align: center;
+        }
+
+        .product-card p {
+            padding: 0 10px 10px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .contact-section {
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        .contact-section h2 {
+            text-align: center;
+        }
+
+        .contact-section p {
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+        }
+
+        .footer-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product-card {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>POTHYS</h1>
+    <p>Quality fabrics for every occasion</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="container">
+    <h2>Welcome to Textile Shop!</h2>
+    <p>Discover a wide range of premium fabrics for all your tailoring and crafting needs. From cottons to silks, we have it all.</p>
+</section>
+
+<section id="products" class="container">
+    <h2>Our Products</h2>
+    <div class="products">
+        <div class="product-card">
+            <img src="fabriccasual.avif" alt="Cotton Fabric">
+            <h3>Cotton Fabric</h3>
+            <p>Soft, breathable, and perfect for casual wear. Available in various colors and patterns.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="fabricsilk.webp" alt="Silk Fabric">
+            <h3>Silk Fabric</h3>
+            <p>Elegant and luxurious, perfect for formal occasions and evening wear.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="fbricwinter.jpg" alt="Wool Fabric">
+            <h3>Wool Fabric</h3>
+            <p>Warm and cozy, ideal for winter garments and outerwear.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="container contact-section">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need assistance, feel free to get in touch with us. We are happy to help!</p>
+    <p>Email: contact@textileshop.com</p>
+    <p>Phone: (555) 123-4567</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Textile Shop</p>
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </div>
+</footer>
+
+</body>
+</html>

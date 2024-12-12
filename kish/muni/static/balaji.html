@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sri Balaji Bhavan Veg Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #2e8b57;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #4CAF50;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            flex: 1;
+        }
+
+        nav a:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .menu-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 30%;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .menu-item h3 {
+            padding: 10px;
+            background-color: #f1f1f1;
+            margin: 0;
+            text-align: center;
+        }
+
+        .menu-item p {
+            padding: 0 10px 10px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        footer {
+            background-color: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .contact-section {
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        .contact-section h2 {
+            text-align: center;
+        }
+
+        .contact-section p {
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+        }
+
+        .footer-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .menu-item {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sri Balaji Bhavan Veg Restaurant</h1>
+    <p>Serving Authentic South Indian Vegetarian Cuisine</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="container">
+    <h2>Welcome to Sri Balaji Bhavan!</h2>
+    <p>At Sri Balaji Bhavan, we offer a wide range of authentic vegetarian dishes made with the finest ingredients. Our menu features traditional South Indian delicacies prepared with love and care to deliver the perfect meal experience.</p>
+</section>
+
+<section id="menu" class="container">
+    <h2>Our Menu</h2>
+    <div class="menu">
+        <div class="menu-item">
+            <img src="masala-dosa.jpg" alt="Masala Dosa">
+            <h3>Masala Dosa</h3>
+            <p>Thin, crispy dosa stuffed with a spicy potato filling, served with chutneys and sambar.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="idli.jpg" alt="Idli Sambar">
+            <h3>Idli Sambar</h3>
+            <p>Soft, steamed rice cakes served with spicy sambar and coconut chutney.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Vegetablebiryani.jpg" alt="Vegetable Biryani">
+            <h3>Vegetable Biryani</h3>
+            <p>Aromatic basmati rice cooked with mixed vegetables and spices, served with raita.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="container contact-section">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or would like to make a reservation, feel free to get in touch with us!</p>
+    <p>Email: contact@balajibhavan.com</p>
+    <p>Phone: (555) 987-6543</p>
+    <p>Address: 456 South Indian Street, Veg City, VC 12345</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Sri Balaji Bhavan Veg Restaurant</p>
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+    </div>
+</footer>
+
+</body>
+</html>

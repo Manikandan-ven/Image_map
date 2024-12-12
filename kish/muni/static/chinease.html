@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chinese Delight Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #ff5722;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff7043;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            flex: 1;
+        }
+
+        nav a:hover {
+            background-color: #f4511e;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .menu-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 30%;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .menu-item h3 {
+            padding: 10px;
+            background-color: #ffccbc;
+            margin: 0;
+            text-align: center;
+        }
+
+        .menu-item p {
+            padding: 0 10px 10px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        footer {
+            background-color: #ff5722;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .contact-section {
+            padding: 20px;
+            background-color: #ffe0b2;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        .contact-section h2 {
+            text-align: center;
+        }
+
+        .contact-section p {
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+        }
+
+        .footer-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .menu-item {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Chinese Delight Restaurant</h1>
+    <p>Authentic Chinese Cuisine with a Modern Twist</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="container">
+    <h2>Welcome to Chinese Delight!</h2>
+    <p>Chinese Delight brings the rich and varied flavors of authentic Chinese cuisine right to your table. From fresh dim sum to sizzling stir-fries, our restaurant offers a wide range of delicious dishes prepared using traditional techniques and fresh ingredients.</p>
+</section>
+
+<section id="menu" class="container">
+    <h2>Our Menu</h2>
+    <div class="menu">
+        <div class="menu-item">
+            <img src="chicken.jpg" alt="Sweet and Sour Chicken">
+            <h3>Sweet and Sour Chicken soup</h3>
+            <p>Crispy chicken pieces coated with a tangy, sweet and sour sauce, served with vegetables.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="grill.jpg" alt="Kung Pao Chicken">
+            <h3>grill chicken </h3>
+            <p>Stir-fried chicken with peanuts, bell peppers, and a savory sauce made with soy, garlic, and chili.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="frriedrice.jpg" alt="vegetable Fried Rice">
+            <h3>Vegetable Fried Rice</h3>
+            <p>Aromatic fried rice with mixed vegetables, soy sauce, and a hint of ginger and garlic.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="container contact-section">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or would like to make a reservation, feel free to contact us. We look forward to serving you!</p>
+    <p>Email: contact@chinesedelight.com</p>
+    <p>Phone: (555) 123-4567</p>
+    <p>Address: 123 Oriental Avenue, Food City, FC 67890</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Chinese Delight Restaurant</p>
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+    </div>
+</footer>
+
+</body>
+</html>
